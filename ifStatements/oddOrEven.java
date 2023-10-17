@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class numberDecider
+class oddOrEven
 {
     public static void main(String args[])
     {
