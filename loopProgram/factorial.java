@@ -5,7 +5,7 @@ class factorial
     public static void main(String args[]) 
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What is your number? (below 20)");
+        System.out.println("What is your number? (below 15)");
         System.out.println("(Only enter a number, no signs, no words, ONLY NUMBERS)");
         System.out.println("Enter here:");
         int num1 = scanner.nextInt();
