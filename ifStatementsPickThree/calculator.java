@@ -4,7 +4,7 @@ class calculator
 {
     public static void main(String args[])
     {
-        Scanner scanner = new Scanner(System.in);
+        Scanner  scanner= new Scanner(System.in);
         System.out.println("Welcome to Matthew's calculator!");
         System.out.println("This is the most advance calculator on this planet! (2000 years ago)");
         System.out.println("You can choose 4 operators, here are the choices,");
