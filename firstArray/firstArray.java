@@ -5,8 +5,9 @@ class firstArray
     public static void main(String args[]) 
     {
         Scanner scanner = new Scanner(System.in);
-        String firstArray = new String [20];
+        String [] firstArray = new String[20];
         boolean exit = false;
+        int index = 0;
 
         while(exit != true)
         {
@@ -16,8 +17,21 @@ class firstArray
 
             if(userWord.equals("exit"))
             {
-                flag = true;
+                exit = true;
             }
+            else
+            {
+                firstArray[index] = userWord;
+                index++;
+            }
+        
+        }
+        index = 0;
+
+        while(firstArray[index] != null)
+        {
+            System.out.print(firstArray[index]);
+            index++;
         }
     }
 }
