@@ -1,29 +1,32 @@
 import java.util.Scanner;
 
-class reverser 
+class reverser
 {
-    public static void main(String args[]) 
+    public static void main(String args[])
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("How many words are you going to use?");
-        int index = scanner.nextInt();
-        scanner.nextLine();
+        int index;
+        int temp;
 
-        String[] firstArray = new String[index];
+        System.out.print("How many numbers? ");
+        index = scanner.nextInt();
 
-        while (index >= 0) 
+        int[] intArray = new int[index];
+
+        for (int i = 0; i < index; i++) 
         {
-            System.out.println("What is your word?");
-            String userWord = scanner.nextLine();
-            firstArray[index] = userWord;
-            index--;
+            System.out.print("Put in a number ");
+            intArray[i] = scanner.nextInt();
         }
-
-        System.out.println("reversed words :o");
-        while(firstArray[index] != null)
+        for (int i = 0, j = index - 1; i < index / 2; i++, j--)
         {
-            System.out.print(firstArray[index]);
-            index--;
+            temp = intArray[j];
+            intArray[j] = intArray[i];
+            intArray[i] = temp;
+        }
+        for (int i = 0; i < index; i++)
+        {
+            System.out.print(intArray[i]);
         }
     }
 }
